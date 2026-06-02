@@ -26,7 +26,7 @@ export async function createPost(formData: FormData) {
   const slug = title
     .toLowerCase()
     .trim()
-    .replace(/[^\w\s-]/g, '')
+    .replace(/[^\w\s\uAC00-\uD7A3-]/g, '')
     .replace(/\s+/g, '-');
 
   const entries = Array.from(formData.entries());
@@ -48,7 +48,7 @@ export async function createPost(formData: FormData) {
     title,
     content: fullContent,
     category: finalCate,
-    slug,
+    slug: slug,
     intro: intro,
   });
   revalidatePath('/blog');

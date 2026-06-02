@@ -3,7 +3,7 @@ export interface CommentType {
   author: string;
   text: string;
   postSlug: string;
-  createdAt: string;
+  createdAt: string | Date;
   password?: string;
 }
 

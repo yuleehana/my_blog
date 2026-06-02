@@ -3,22 +3,22 @@ import { Post } from '@/app/models/Post';
 import { PostType } from '@/types/post';
 import { DEFAULT_CATEGORIES } from '@/constants/categories';
 import { Comment as CommentModel } from '@/app/models/Comment';
-import { CommentType } from '@/components/CommentList';
+import { CommentType } from '@/types/index';
 
-// 게시물 다 가져오기 (sort 매개변수 추가, 기본값은 'latest')
+// 게시물 다 가져오기 sort 매개변수 추가, 기본값은 latest
 export async function getAllPosts(sort: string = 'latest'): Promise<PostType[]> {
   await connectDB();
 
-  // 1. 정렬 기준 설정
+  // 정렬 기준 설정
   let sortOption: Record<string, 1 | -1> = { createdAt: -1 };
 
   if (sort === 'likes') {
-    sortOption = { likes: -1 }; // 좋아요순 (DB에 likes 필드가 있어야 함)
+    sortOption = { likes: -1 };
   } else if (sort === 'hits') {
-    sortOption = { views: -1 }; // 조회수순 (DB에 views 필드가 있어야 함)
+    sortOption = { views: -1 };
   }
 
-  // 2. 설정한 정렬 기준 적용
+  // 설정한 정렬 기준 적용
   const posts = await Post.find({}).sort(sortOption).lean();
 
   return posts.map((post: PostType) => ({
@@ -107,4 +107,3 @@ export async function getComments(slug: string) {
     createdAt: (comment.createdAt as Date).toISOString(),
   }));
 }
-

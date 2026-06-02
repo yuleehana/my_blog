@@ -1,3 +1,4 @@
+import FloatingGuestbook from '@/components/FloatingGuestbook';
 import GuestbookForm from '@/components/GuestbookForm';
 import GuestbookItem from '@/components/GuestbookItem';
 import { getGuestbookMessages } from '@/lib/guestbook';
@@ -52,7 +53,7 @@ export default async function GuestBookPage() {
       </div>
 
       {/* 방명록 댓글  */}
-      <div className="max-w-200 overflow-y-auto h-120 mx-auto flex flex-col gap-4">
+      <div className="max-w-200 overflow-y-auto [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden h-120 mx-auto flex flex-col gap-4 pb-32">
         {messages.length === 0 ? (
           <p className="text-center py-10 text-text-2">방명록이 비어있습니다.</p>
         ) : (
@@ -61,9 +62,11 @@ export default async function GuestBookPage() {
       </div>
 
       {/* 방명록 폼 */}
-      <div className="w-200 mx-auto fixed bottom-0">
+      {/* <div className="w-200 mx-auto fixed bottom-0">
         <GuestbookForm />
-      </div>
+      </div> */}
+
+      <FloatingGuestbook />
     </div>
   );
 }

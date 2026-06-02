@@ -5,8 +5,9 @@ import { extractToc } from '@/lib/utils';
 import TableOfContents from '@/components/TableOfContents';
 import PostContent from '@/components/PostContent';
 import CommentSection from '@/components/CommentSection';
-import CommentItem, { CommentType } from '@/components/CommentList';
+import CommentItem from '@/components/CommentList';
 import LikedBtn from '@/components/button/LikedBtn';
+import { CommentType } from '@/types';
 
 export default async function PostPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
@@ -49,7 +50,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             <PostContent content={post.content} />
           </div>
 
-          <div className='w-full flex justify-center items-center mb-14'>
+          <div className="w-full flex justify-center items-center mb-14">
             <LikedBtn slug={slug} />
           </div>
 

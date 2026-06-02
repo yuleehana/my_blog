@@ -45,7 +45,7 @@ export default function ProfileCard({ children }: { children: React.ReactNode })
           before:opacity-100 
           before:rounded-t-sub">
           <div className="absolute -top-28 w-48 h-48 rounded-full bg-bg-primary overflow-hidden mb-4">
-            {/* <Image src="/my-avatar.png" alt="avatar" fill className="object-cover" /> */}
+            <Image src="/profile.png" alt="avatar" fill className="object-cover" />
           </div>
         </div>
       </div>
@@ -57,15 +57,15 @@ export default function ProfileCard({ children }: { children: React.ReactNode })
         </div>
         <div className="bg-text-hover rounded-main flex w-full h-15 justify-center items-center">
           <div className="flex w-full justify-evenly">
-            <Link className="block items-center" href={`/`}>
-              {/* wh는 라이트(isDark=false), bk는 다크(isDark=true)일 때 보이도록 */}
+            {/* <Link className="block items-center" href={`/`}>
+              wh는 라이트(isDark=false), bk는 다크(isDark=true)일 때 보이도록
               <Image
                 src={isDark ? '/icons/bkiconSearch.svg' : '/icons/whIconSearch.svg'}
                 alt="검색 아이콘"
                 width={22}
                 height={22}
               />
-            </Link>
+            </Link> */}
             <Link href={`/admin/write`} className="block items-center">
               <Image
                 className="fill-current hover:text-primary"

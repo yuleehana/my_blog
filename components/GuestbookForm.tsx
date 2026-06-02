@@ -19,7 +19,7 @@ export default function GuestbookForm() {
   };
 
   return (
-    <div className="w-full shadow-default bg-point border border-text-point/40 px-9 pt-8 rounded-t-main flex flex-col gap-6">
+    <div className="w-full bg-point px-9 pb-8 rounded-t-main flex flex-col gap-6">
       <div className="flex w-full items-center justify-between gap-4">
         <div className="flex gap-4 items-center flex-1">
           {/* 이름 인풋 박스 */}
@@ -71,7 +71,7 @@ export default function GuestbookForm() {
         placeholder="따뜻한 한마디를 남겨주세요."
         value={text}
         onChange={(e) => setText(e.target.value)}
-        className="w-full h-32 px-8 py-6 bg-bg-primary rounded-t-main outline-none focus:ring-1 focus:ring-text-point/30 resize-none text-body"
+        className="w-full h-32 px-8 py-6 bg-bg-primary rounded-main outline-none focus:ring-1 focus:ring-text-point/30 resize-none text-body"
       />
     </div>
   );
