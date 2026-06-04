@@ -45,7 +45,15 @@ export default function ProfileCard({ children }: { children: React.ReactNode })
           before:opacity-100 
           before:rounded-t-sub">
           <div className="absolute -top-28 w-48 h-48 rounded-full bg-bg-primary overflow-hidden mb-4">
-            <Image src="/profile.png" alt="avatar" fill className="object-cover" />
+            <Image
+              src="/profile.png"
+              alt="avatar"
+              fill
+              className="object-cover"
+              // width={120}
+              // height={120}
+              sizes="(max-width: 250px) 10vw, 200px"
+            />
           </div>
         </div>
       </div>
