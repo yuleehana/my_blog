@@ -16,6 +16,8 @@ Next.js Server Actions와 MongoDB/Mongoose를 결합하여 안정적인 데이�
 
 ---
 
+<br>
+
 ## 🛠 Tech Stack
 
 - Next.js (App Router)
@@ -28,7 +30,11 @@ Next.js Server Actions와 MongoDB/Mongoose를 결합하여 안정적인 데이�
 
 ---
 
+<br>
+
 ## 📁 Project Structure
+
+<br>
 
 ```
 my_blog/
@@ -58,7 +64,11 @@ my_blog/
 
 ---
 
+<br>
+
 ## ✨ Key Features
+
+<br>
 
 ### 1. URL 친화적 다이내믹 라우팅 ([slug])
 
@@ -101,7 +111,11 @@ my_blog/
 
 ---
 
+<br>
+
 ## 🛠 Data Architecture Detail
+
+<br>
 
 ### 1. Mongoose Connection Pool 관리 (lib/db.ts)
 
@@ -117,7 +131,11 @@ my_blog/
 
 ---
 
+<br>
+
 ## ⚠️ Problems & Solutions
+
+<br>
 
 ### 문제 1. 한글 제목 작성 시 슬러그(Slug) 누락 및 DB 에러
 
@@ -187,6 +205,8 @@ my_blog/
 
 ## 📈 What I Learned
 
+<br>
+
 ### 섬세한 UI/UX 제어 능력
 
 - 하드코딩된 수치 대신 calc()와 최신 CSS Grid 명세를 조합하여 완성도 높은 가변 애니메이션을 구현하는 방법을 터득했습니다.
@@ -207,6 +227,8 @@ my_blog/
 <br>
 
 ---
+
+<br>
 
 ## 📬 Contact
 
