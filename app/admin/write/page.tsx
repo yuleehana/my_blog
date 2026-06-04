@@ -7,6 +7,8 @@ import { useThemeStore } from '@/store/useThemeStore';
 import CateSelect from '@/components/common/CateSelect';
 import { useSearchParams } from 'next/navigation';
 
+export const dynamic = 'force-dynamic';
+
 export default function WritePage() {
   const { isDark } = useThemeStore();
   const [showIntro, setShowIntro] = useState(false);
