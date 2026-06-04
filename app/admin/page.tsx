@@ -1,5 +1,7 @@
 import { createPost } from '../actions';
 
+export const dynamic = 'force-dynamic';
+
 export default function WritePage() {
   return (
     <form action={createPost}>
