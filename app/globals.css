@@ -88,7 +88,7 @@ video {
 
 /* H1 */
 @utility text-title {
-  font-size: clamp(28px, 3.5vw, 48px);
+  font-size: clamp(28px, 3vw, 48px);
   font-weight: 500;
   font-family: var(--font-main);
 }
