@@ -12,7 +12,7 @@ Next.js Server Actions와 MongoDB/Mongoose를 결합하여 안정적인 데이�
 
 ## 📸 Screenshots
 
-![Main Page](https://my-blog-pearl-chi.vercel.app/public/myblogMainWh.svg)
+![Main Page](https://my-blog-pearl-chi.vercel.app/myblogMainWh.svg)
 
 ---
 
