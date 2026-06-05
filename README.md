@@ -6,13 +6,13 @@ Next.js Server Actions와 MongoDB/Mongoose를 결합하여 안정적인 데이�
 
 ## 🔗 Live Demo
 
-<!-- 👉 ([사이트 바로가기](https://yuhana-portfolio.vercel.app/)) -->
+👉 ([사이트 바로가기](https://my-blog-pearl-chi.vercel.app/))
 
 ---
 
 ## 📸 Screenshots
 
-<!-- ![Main Page](https://yuhana-portfolio.vercel.app/images/webPortfolioMain.svg) -->
+![Main Page](https://my-blog-pearl-chi.vercel.app/public/myblogMainWh.svg)
 
 ---
 
