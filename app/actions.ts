@@ -16,7 +16,7 @@ export async function createPost(formData: FormData) {
   await connectDB();
 
   const title = formData.get('title') as string;
-  const content = formData.get('content') as string;
+  // const content = formData.get('content') as string;
   const selectCate = formData.get('categorySelect') as string;
   const customCate = formData.get('customCategory') as string;
   const intro = formData.get('intro') as string;
@@ -29,7 +29,7 @@ export async function createPost(formData: FormData) {
     .replace(/[^\w\s\uAC00-\uD7A3-]/g, '')
     .replace(/\s+/g, '-');
 
-  const entries = Array.from(formData.entries());
+  // const entries = Array.from(formData.entries());
   const sections: { subTitle: string; content: string }[] = [];
   let i = 0;
   while (formData.has(`subTitle_${i}`)) {
